@@ -183,7 +183,7 @@ elif [ $number = 16 ]; then
 	echo
 # UPDATE
 elif [ $number = 17 ]; then
-	wget "https://github.com/b3rito/yodo/blob/master/yodo.sh" -O yolo.sh
+	wget "https://raw.githubusercontent.com/b3rito/yodo/master/yodo.sh" -O yodo.sh
 # EXIT
 elif [ $number = 99 ]; then
 	exit
