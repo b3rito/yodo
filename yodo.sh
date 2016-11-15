@@ -130,7 +130,7 @@ echo "   4) Vi                 10) Dirtyc0w °            16) Credits"
 echo "   5) Python             11) Gdb                   17) Update"
 echo "   6) Irb                12) Ruby                  99) Exit"
 echo -e "\e[m"
-echo -e "\e[1;93m * user interatcion \e[m"
+echo -e "\e[1;93m * user interaction \e[m"
 echo -e "\e[1;93m ° sudo not required \e[m"
 read -p " Enter Number: " number
 # Has the number been added?
@@ -233,12 +233,12 @@ elif [ $number = 15 ]; then
 # CREDITS
 elif [ $number = 16 ]; then
 	echo
-	echo "  YODO?"
+	echo "  YODO"
 	echo "  Created by: b3rito"
 	echo "  Report bugs: b3rito@mes3hacklab.org"
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
 	echo "  bug reported by klez"
-	echo " 	ascii art by m"
+	echo "  ascii art by m"
 	echo
 # UPDATE
 elif [ $number = 17 ]; then
