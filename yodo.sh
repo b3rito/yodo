@@ -80,7 +80,7 @@ cPython=$( grep -ic "python" check.txt )
 cIrb=$( grep -ic "irb" check.txt )
 cLess=$( grep -ic "less" check.txt )
 cMore=$( grep -ic "more" check.txt )
-cMan=$( cat check.txt | grep -v commands > check1.txt | grep -ic "man" check1.txt )
+cMan=$( cat check.txt | grep -v commands check.txt | grep -ic "man" )
 cGdb=$( grep -ic "gdb" check.txt )
 cRuby=$( grep -ic "ruby" check.txt )
 cB3=$( grep -ic "NOPASSWD" check.txt )
@@ -119,7 +119,7 @@ else
 	echo -e " good luck \e[m"
 fi
 rm check.txt
-rm check1.txt
+# MENU
 echo
 echo -e "\e[1;92m Select From the menu:"
 echo 
@@ -233,11 +233,12 @@ elif [ $number = 15 ]; then
 # CREDITS
 elif [ $number = 16 ]; then
 	echo
-	echo "  YODO"
+	echo "  YODO version 1.0.2"
 	echo "  Created by: b3rito"
 	echo "  Report bugs: b3rito@mes3hacklab.org"
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
-	echo "  bug reported by klez"
+	echo "  bug reported by klez | rudeyak"
+	echo "  fix by klez | rudeyak"
 	echo "  ascii art by m"
 	echo
 # UPDATE
