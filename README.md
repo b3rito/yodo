@@ -90,13 +90,15 @@ Written by b3rito at mes3hacklab
  
      Select From the menu:
  
-       1) Find                7) Less *                13) b3
-       2) AWK                 8) More *                14) Perl
-       3) Nmap                9) Man  *                15) Tee
-       4) Vi                 10) Dirtyc0w °            16) Credits
-       5) Python             11) Gdb                   17) Update
-       6) Irb                12) Ruby                  99) Exit
+       1) Find                8) More *                15) Tee
+       2) AWK                 9) Man  *                16) VSP
+       3) Nmap               10) Dirtyc0w °            17) Credits
+       4) Vi                 11) Gdb                   18) Update
+       5) Python             12) Ruby                  99) Exit
+       6) Irb                13) b3
+       7) Less *             14) Perl
          
+     VSP = Vulnerable Script Permissions
      * user interatcion
      ° sudo not required
     Enter Number: 1
