@@ -323,7 +323,7 @@ elif [ $number = 17 ]; then
 # CREDITS
 elif [ $number = 18 ]; then
 	echo
-	echo "  YODO version 1.2.0"
+	echo "  YODO version 1.3.0"
 	echo "  Created by: b3rito"
 	echo "  Report bugs: b3rito@mes3hacklab.org"
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
