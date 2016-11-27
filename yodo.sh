@@ -68,7 +68,7 @@ cat << "img"
                      
 img
 echo -e "\e[1;94m=======================================================================\e[m"
-echo -e "\e[1;46m Possible exploitable options (dirtyc0w | VSP | Pathzuzu excluded):\e[m \e[1;91m"
+echo -e "\e[1;46m Possible exploitable options (‡ excluded):\e[m \e[1;91m"
 # Check if possible
 sudo -l > check.txt
 # Value check
@@ -124,12 +124,12 @@ echo
 echo -e "\e[1;92m Select From the menu:"
 echo 
 echo "   1) Find                8) More *                15) Tee"
-echo "   2) AWK                 9) Man  *                16) VSP °"
-echo "   3) Nmap               10) Dirtyc0w °            17) Pathzuzu °"
-echo "   4) Vi                 11) Gdb                   18) Credits"
-echo "   5) Python             12) Ruby                  19) Update"
-echo "   6) Irb                13) b3                    99) Exit"
-echo "   7) Less *             14) Perl"
+echo "   2) AWK                 9) Man  *                16) VSP °‡"
+echo "   3) Nmap               10) Dirtyc0w °‡           17) Pathzuzu °‡"
+echo "   4) Vi                 11) Gdb                   18) History °‡"
+echo "   5) Python             12) Ruby                  19) Credits"
+echo "   6) Irb                13) b3                    20) Update"
+echo "   7) Less *             14) Perl                  99) Exit"
 echo -e "\e[m"
 echo " VSP = Vulnerable Script Permissions"
 echo " Pathzuzu = SUID exploitation threw Path vulnerability"
@@ -320,10 +320,30 @@ elif [ $number = 17 ]; then
 				echo " I did not understand"
 			fi
 
-# CREDITS
+# HISTORY
 elif [ $number = 18 ]; then
+	hist=$(ls -lah ~/.*history | awk '{print $9}' && /root/.*hostiry 2>/dev/null | awk '{print $9}')
+		echo "="	
+		echo $hist 
+		echo "="	
+	read -p "Check them all? (yes/no) : " histResults
+		if [ -z $histResults ]; then
+			echo "I did not understand"
+		elif [ "$histResults" == "yes" ] || [ "$histResults" == "y" ]; then
+			for h in $hist
+				do echo -e "\e[1;93mShowing $h\e[m"
+					cat $hist
+				done
+				exit 0
+		elif [ "$histResults" == "no" ] || [ "$histResults" == "n" ]; then
+			read -p "specify which one : " histSpec
+				cat $histSpec
+				exit 1
+		fi
+# CREDITS
+elif [ $number = 19 ]; then
 	echo
-	echo "  YODO version 1.3.0"
+	echo "  YODO version 1.4.0"
 	echo "  Created by: b3rito"
 	echo "  Report bugs: b3rito@mes3hacklab.org"
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
@@ -333,7 +353,7 @@ elif [ $number = 18 ]; then
 	echo "  ascii art by m"
 	echo
 # UPDATE
-elif [ $number = 19 ]; then
+elif [ $number = 20 ]; then
 	wget "https://raw.githubusercontent.com/b3rito/yodo/master/yodo.sh" -O yodo.sh
 # EXIT
 elif [ $number = 99 ]; then
