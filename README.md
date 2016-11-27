@@ -1,5 +1,6 @@
 # yodo
-This tool proves how easy it is to become root via limited sudo permissions or via dirtyc0w
+This tool proves how easy it is to become root via limited sudo permissions, via dirtyc0w or using Pa(th)zuzu.
+
 
 Example:
 If a user has sudo privileges only on vi, he could become root by runnuing this command: sudo vi -c ':shell'
@@ -91,7 +92,7 @@ Written by b3rito at mes3hacklab
      Select From the menu:
  
        1) Find                8) Man  *               17) Pathzuzu °‡
-       2) AWK                10) Dirtyc0w °‡          18) History °‡
+       2) AWK                10) Dirty COW °‡         18) History °‡
        3) Nmap               11) Gdb                  19) Vim
        4) Vi                 12) Ruby                 20) Lua
        5) Python             13) b3                   21) Ftp *
