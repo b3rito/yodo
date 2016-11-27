@@ -90,13 +90,14 @@ Written by b3rito at mes3hacklab
  
      Select From the menu:
  
-       1) Find                8) More *                15) Tee
-       2) AWK                 9) Man  *                16) VSP °‡
-       3) Nmap               10) Dirtyc0w °‡           17) Pathzuzu °‡
-       4) Vi                 11) Gdb                   18) History °‡
-       5) Python             12) Ruby                  19) Credits
-       6) Irb                13) b3                    20) Update
-       7) Less *             14) Perl                  99) Exit
+       1) Find                8) Man  *               17) Pathzuzu °‡
+       2) AWK                10) Dirtyc0w °‡          18) History °‡
+       3) Nmap               11) Gdb                  19) Vim
+       4) Vi                 12) Ruby                 20) Lua
+       5) Python             13) b3                   21) Ftp *
+       6) Irb                14) Perl                 22) Credits
+       7) Less *             15) Tee                  23) Update
+       8) More *             16) VSP °‡               99) Exit
          
      VSP = Vulnerable Script Permissions
      Pathzuzu = SUID exploitation threw Path vulnerability
