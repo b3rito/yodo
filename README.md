@@ -1,9 +1,13 @@
 # yodo
 This tool proves how easy it is to become root via limited sudo permissions, via dirtyc0w or using Pa(th)zuzu.
 
-Extra features
-VSP: checks if the user is able to overwrite a sudo-enabled command with his own
-History: checks for * history (like bash_history) files. You could be lucky!
+
+# Extra features
+-
+VSP : checks if the user is able to overwrite a sudo-enabled command with his own
+
+History : checks for * history (like bash_history) files. You could be lucky!
+
 
 
 Example:
