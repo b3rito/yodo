@@ -83,7 +83,7 @@ Written by b3rito at mes3hacklab
                      .          .                    
                       ~.             N.                                         
     =======================================================================
-    Possible exploitable options (dirtyc0w | VSP | Pathzuzu excluded):
+    Possible exploitable options (‡ excluded):
      [·] find
      [·] vi
      [·] b3
@@ -91,12 +91,12 @@ Written by b3rito at mes3hacklab
      Select From the menu:
  
        1) Find                8) More *                15) Tee
-       2) AWK                 9) Man  *                16) VSP °
-       3) Nmap               10) Dirtyc0w °            17) Pathzuzu °
-       4) Vi                 11) Gdb                   18) Credits
-       5) Python             12) Ruby                  19) Update
-       6) Irb                13) b3                    99) Exit
-       7) Less *             14) Perl
+       2) AWK                 9) Man  *                16) VSP °‡
+       3) Nmap               10) Dirtyc0w °‡           17) Pathzuzu °‡
+       4) Vi                 11) Gdb                   18) History °‡
+       5) Python             12) Ruby                  19) Credits
+       6) Irb                13) b3                    20) Update
+       7) Less *             14) Perl                  99) Exit
          
      VSP = Vulnerable Script Permissions
      Pathzuzu = SUID exploitation threw Path vulnerability
