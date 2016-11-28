@@ -142,7 +142,7 @@ echo "   7) Less *             15) Tee                  23) Update"
 echo "   8) More *             16) VSP °‡               99) Exit"
 echo -e "\e[m"
 echo " VSP = Vulnerable Script Permissions"
-echo " Pathzuzu = SUID exploitation threw Path vulnerability"
+echo " Pathzuzu = SUID exploitation through Path vulnerability"
 echo -e "\e[1;93m * user interaction \e[m"
 echo -e "\e[1;93m ° sudo not required \e[m"
 read -p " Enter Number: " number
