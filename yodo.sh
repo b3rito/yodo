@@ -143,6 +143,7 @@ echo "   8) More *             16) VSP °‡               99) Exit"
 echo -e "\e[m"
 echo " VSP = Vulnerable Script Permissions"
 echo " Pathzuzu = SUID exploitation through Path vulnerability"
+echo " b3 = editable root privileged commands listed in 'sudo -l'"
 echo -e "\e[1;93m * user interaction \e[m"
 echo -e "\e[1;93m ° sudo not required \e[m"
 read -p " Enter Number: " number
