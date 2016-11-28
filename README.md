@@ -109,7 +109,7 @@ Written by b3rito at mes3hacklab
        8) More *             16) VSP °‡               99) Exit
          
      VSP = Vulnerable Script Permissions
-     Pathzuzu = SUID exploitation threw Path vulnerability
+     Pathzuzu = SUID exploitation through Path vulnerability
      * user interatcion
      ° sudo not required
     Enter Number: 1
