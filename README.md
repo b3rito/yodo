@@ -119,6 +119,7 @@ Written by b3rito at mes3hacklab
          
      VSP = Vulnerable Script Permissions
      Pathzuzu = SUID exploitation through Path vulnerability
+     b3 = editable root privileged commands listed in 'sudo -l'
      * user interatcion
      ° sudo not required
     Enter Number: 1
