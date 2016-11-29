@@ -68,7 +68,7 @@ cat << "img"
                      
 img
 echo -e "\e[1;94m=======================================================================\e[m"
-echo -e "\e[1;46m Possible exploitable options (‡ excluded):\e[m \e[1;91m"
+echo -e "\e[1;46m Possible options (‡ excluded):\e[m \e[1;91m"
 # Check if possible
 sudo -l > check.txt
 # Value check
