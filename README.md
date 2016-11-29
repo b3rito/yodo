@@ -101,7 +101,7 @@ Written by b3rito at mes3hacklab
                      .          .                    
                       ~.             N.                                         
     =======================================================================
-    Possible exploitable options (‡ excluded):
+    Possible options (‡ excluded):
      [·] find
      [·] vi
      [·] b3
