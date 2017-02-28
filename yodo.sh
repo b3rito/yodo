@@ -1,8 +1,20 @@
 #!/bin/bash
 
-clear
-echo -e "\e[1;94m=======================================================================\e[m"
-cat << "img"
+while getopts ":n:" opt; do
+	case $opt in
+		n)
+			number=$OPTARG   
+		;;
+		\?)
+			echo "Invalid option: $OPTARG"
+			exit
+		;;
+	esac
+done
+
+if [ $OPTIND -eq 1 ]; then
+	echo -e "\e[1;94m=======================================================================\e[m"
+	cat << "img"
                                     ....                                        
                                 ..  .77.                                        
                                 Z.  ,77?                                        
@@ -67,85 +79,89 @@ cat << "img"
                       ~.             N.                                         
                      
 img
-echo -e "\e[1;94m=======================================================================\e[m"
-echo -e "\e[1;46m Possible exploitable options (‡ excluded):\e[m \e[1;91m"
-# Check if possible
-sudo -l > check.txt
-# Value check
-cFind=$( grep -ic "find" check.txt )
-cAwk=$( grep -ic "awk" check.txt )
-cNmap=$( grep -ic "nmap" check.txt )
-cVi=$( grep -ic "vi" check.txt )
-cPython=$( grep -ic "python" check.txt )
-cIrb=$( grep -ic "irb" check.txt )
-cLess=$( grep -ic "less" check.txt )
-cMore=$( grep -ic "more" check.txt )
-cMan=$( cat check.txt | grep -v commands check.txt | grep -ic "man" )
-cGdb=$( grep -ic "gdb" check.txt )
-cRuby=$( grep -ic "ruby" check.txt )
-cB3=$( grep -ic "NOPASSWD" check.txt )
-cPerl=$( grep -ic "perl" check.txt )
-cTee=$( grep -ic "tee" check.txt )
-cVim=$( grep -ic "vim" check.txt )
-cLua=$( grep -ic "lua" check.txt )
-cFtp=$( grep -ic "ftp" check.txt )	
-# Function check
-if [ $cFind -gt 0 ]; then
-	echo " [·] find"
-elif [ $cAwk -gt 0 ]; then
-	echo " [·] awk"
-elif [ $cNmap -gt 0 ]; then
-	echo " [·] nmap"
-elif [ $cVi -gt 0 ]; then
-	echo " [·] vi"
-elif [ $cPython -gt 0 ]; then
-	echo " [·] python"
-elif [ $cIrb -gt 0 ]; then
-	echo " [·] irb"
-elif [ $cLess -gt 0 ]; then
-	echo " [·] less"
-elif [ $cMore -gt 0 ]; then
-	echo " [·] more"
-elif [ $cMan -gt 0 ]; then
-	echo " [·] man"
-elif [ $cGdb -gt 0 ]; then
-	echo " [·] gdb"
-elif [ $cRuby -gt 0 ]; then
-	echo " [·] ruby"
-elif [ $cB3 -gt 0 ]; then
-	echo " [·] b3"
-elif [ $cPerl -gt 0 ]; then
-	echo " [·] perl"
-elif [ $cTee -gt 0 ]; then
-	echo " [·] tee"
-elif [ $cVim -gt 0 ]; then
-	echo " [·] vim"
-elif [ $cLua -gt 0 ]; then
-	echo " [·] lua"
-elif [ $cFtp -gt 0 ]; then
-	echo " [·] ftp"
-else 
-	echo -e " good luck \e[m"
+	echo -e "\e[1;94m=======================================================================\e[m"
+	echo -e "\e[1;46m Alternative usage: ./yodo.sh -n [NUMBER]:\e[m \e[1;91m"
+	echo -e "\e[1;46m \e[39mPossible exploitable options (‡ excluded):\e[m \e[1;91m"
+	
+	
+	# Check if possible
+	sudo -l > check.txt
+	# Value check
+	cFind=$( grep -ic "find" check.txt )
+	cAwk=$( grep -ic "awk" check.txt )
+	cNmap=$( grep -ic "nmap" check.txt )
+	cVi=$( grep -ic "vi" check.txt )
+	cPython=$( grep -ic "python" check.txt )
+	cIrb=$( grep -ic "irb" check.txt )
+	cLess=$( grep -ic "less" check.txt )
+	cMore=$( grep -ic "more" check.txt )
+	cMan=$( cat check.txt | grep -v commands check.txt | grep -ic "man" )
+	cGdb=$( grep -ic "gdb" check.txt )
+	cRuby=$( grep -ic "ruby" check.txt )
+	cB3=$( grep -ic "NOPASSWD" check.txt )
+	cPerl=$( grep -ic "perl" check.txt )
+	cTee=$( grep -ic "tee" check.txt )
+	cVim=$( grep -ic "vim" check.txt )
+	cLua=$( grep -ic "lua" check.txt )
+	cFtp=$( grep -ic "ftp" check.txt )	
+	# Function check
+	if [ $cFind -gt 0 ]; then
+		echo " [·] find"
+	elif [ $cAwk -gt 0 ]; then
+		echo " [·] awk"
+	elif [ $cNmap -gt 0 ]; then
+		echo " [·] nmap"
+	elif [ $cVi -gt 0 ]; then
+		echo " [·] vi"
+	elif [ $cPython -gt 0 ]; then
+		echo " [·] python"
+	elif [ $cIrb -gt 0 ]; then
+		echo " [·] irb"
+	elif [ $cLess -gt 0 ]; then
+		echo " [·] less"
+	elif [ $cMore -gt 0 ]; then
+		echo " [·] more"
+	elif [ $cMan -gt 0 ]; then
+		echo " [·] man"
+	elif [ $cGdb -gt 0 ]; then
+		echo " [·] gdb"
+	elif [ $cRuby -gt 0 ]; then
+		echo " [·] ruby"
+	elif [ $cB3 -gt 0 ]; then
+		echo " [·] b3"
+	elif [ $cPerl -gt 0 ]; then
+		echo " [·] perl"
+	elif [ $cTee -gt 0 ]; then
+		echo " [·] tee"
+	elif [ $cVim -gt 0 ]; then
+		echo " [·] vim"
+	elif [ $cLua -gt 0 ]; then
+		echo " [·] lua"
+	elif [ $cFtp -gt 0 ]; then
+		echo " [·] ftp"
+	else 
+		echo -e " good luck \e[m"
+	fi
+	rm check.txt
+	# MENU
+	echo
+	echo -e "\e[1;92m Select From the menu:"
+	echo 
+	echo "   1) Find                8) Man  *               17) Pathzuzu °‡"
+	echo "   2) AWK                10) Dirtyc0w °‡          18) History °‡"
+	echo "   3) Nmap               11) Gdb                  19) Vim"
+	echo "   4) Vi                 12) Ruby                 20) Lua"
+	echo "   5) Python             13) b3                   21) Ftp *"
+	echo "   6) Irb                14) Perl                 22) Credits"
+	echo "   7) Less *             15) Tee                  23) Update"
+	echo "   8) More *             16) VSP °‡               99) Exit"
+	echo -e "\e[m"
+	echo " VSP = Vulnerable Script Permissions"
+	echo " Pathzuzu = SUID exploitation threw Path vulnerability"
+	echo -e "\e[1;93m * user interaction \e[m"
+	echo -e "\e[1;93m ° sudo not required \e[m"
+	read -p " Enter Number: " number
 fi
-rm check.txt
-# MENU
-echo
-echo -e "\e[1;92m Select From the menu:"
-echo 
-echo "   1) Find                8) Man  *               17) Pathzuzu °‡"
-echo "   2) AWK                10) Dirtyc0w °‡          18) History °‡"
-echo "   3) Nmap               11) Gdb                  19) Vim"
-echo "   4) Vi                 12) Ruby                 20) Lua"
-echo "   5) Python             13) b3                   21) Ftp *"
-echo "   6) Irb                14) Perl                 22) Credits"
-echo "   7) Less *             15) Tee                  23) Update"
-echo "   8) More *             16) VSP °‡               99) Exit"
-echo -e "\e[m"
-echo " VSP = Vulnerable Script Permissions"
-echo " Pathzuzu = SUID exploitation threw Path vulnerability"
-echo -e "\e[1;93m * user interaction \e[m"
-echo -e "\e[1;93m ° sudo not required \e[m"
-read -p " Enter Number: " number
 # Has the number been added?
 if [ -z $number ]; then
 	echo " Not entered"
@@ -366,7 +382,7 @@ elif [ $number = 21 ]; then
 # CREDITS
 elif [ $number = 22 ]; then
 	echo
-	echo "  YODO version 1.5.1"
+	echo "  YODO version 1.6.1"
 	echo "  Created by: b3rito"
 	echo "  Report bugs: b3rito@mes3hacklab.org"
 	echo "  Homepage: http://mes3hacklab.org/yodo.html"
